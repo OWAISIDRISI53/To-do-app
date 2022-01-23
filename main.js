@@ -11,9 +11,12 @@ newLi.innerHTML = `
      <h5 id='h5' class="flex-grow-1">${a}</h5>
         <button onclick="edit(this)" type="button" class="btn btn-warning mx-2">Edit</button>
         <button id='rem' onclick="remove(this)" type="button" class="btn btn-danger">Remove</button>
-  
                   `
-ul.append(newLi);
+if (a==null) {
+  
+} else {
+  ul.append(newLi);
+}
 function add() {
   newLi = document.createElement('li')
   newLi.classList = 'list-group-item d-flex justify-content-between';
