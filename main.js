@@ -21,7 +21,6 @@ newLi.innerHTML = `
 
 function add() {
 if (text.value == '') {
-  alert('Enter Task')
 } else {
   newLi = document.createElement('li')
   newLi.classList = 'list-group-item d-flex justify-content-between';
